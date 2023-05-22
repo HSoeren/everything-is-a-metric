@@ -26,6 +26,7 @@ jobs:
     
     - name: Build the Docker image and tag it with todays date, also as latest build
       run: |
+        docker pull ghcr.io/hsoeren/everything-is-a-metric:latest
         docker build . --tag ghcr.io/hsoeren/everything-is-a-metric:latest --tag ghcr.io/hsoeren/everything-is-a-metric:${{ steps.commit.outputs.short }}
         docker push ghcr.io/hsoeren/everything-is-a-metric:${{ steps.commit.outputs.short }}
         docker push ghcr.io/hsoeren/everything-is-a-metric:latest

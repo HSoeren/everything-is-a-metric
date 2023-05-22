@@ -17,5 +17,6 @@ VOLUME /app/data
 CMD ["python", "app.py"]
 
 # label section
-LABEL description="Prometheus Exporter for custom metrics"
-LABEL maintainer="Soeren Helms <soeren.helms@repronik.it>"
+LABEL org.opencontainers.image.source https://github.com/HSoeren/everything-is-a-metric
+LABEL org.opencontainers.image.authors="Soeren Helms <soeren.helms@repronik.it>"
+LABEL org.opencontainers.image.description="Prometheus Exporter for custom metrics"
