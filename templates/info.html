@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            html {
+                max-width: 70ch;
+                padding: 1em 1em;
+                margin: auto;
+                line-height: 1.75;
+                font-size: 1.25em;
+                font-family: Arial, sans-serif;
+            }
+            h1,h2,h3,h4,h5,h6 {
+                margin: 2em 0 1em;
+                justify-content: center;
+            }
+            p,ul,ol {
+                margin-bottom: 1em;
+                color: #1d1d1d;
+            }
+            a {
+                color: #505050;
+                text-decoration: dotted underline;
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>everything is a metric</h1>
+        <p>Metrics are scraped and used by prometheus. Normally your device offers an endpoint which prometheus can scrape. If not prometheus allows to be pushed with updates. Unfortunatly my usecase involves some devices that go dark for 20 days, then push three updates and go dark again for a long time. These created issues with tracking certain stuff which sparked the idea of a simple GET/POST based collection service which can be scraped itself.</p>
+        <a href="https://github.com/HSoeren/everything-is-a-metric">GitHub: HSoeren/everything-is-a-metric</a>
+        <br />
+        <p><b>Hint: This is not meant as public service, but it needs to be reachable from the outside in order to work. So if you find this please be so kind to not use this service and not spread the word of this instance. You can however share the github project if you like - or contribute to it. Thanks a lot</b></p>
+    </body>
+</html>
